@@ -25,7 +25,11 @@ public class Rectangle {
 
     public double longestLineWithin(){
 
-        throw new RuntimeException("Not implemented yet");
+        double lengthSquared = this.length * this.length;
+        double widthSquared = this.width * this.width;
+        double longestLine = Math.sqrt(lengthSquared + widthSquared); //this is what I found online but it doesent work. I think its because I have to import a library
+        return longestLine;
+        //throw new RuntimeException("Not implemented yet");
     }
     
 }

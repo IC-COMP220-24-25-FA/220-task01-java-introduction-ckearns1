@@ -26,4 +26,10 @@ public class RectangleTest {
         Rectangle myRectangle = new Rectangle(3, 2);
         assertEquals(12, myRectangle.doubleSize(), 0.0001);
     }
+
+    @Test
+    public void longestLineTest(){
+        Rectangle myRectangle = new Rectangle(3, 4);
+        assertEquals(5, myRectangle.longestLineWithin(), 0.0001);
+    }
 }
