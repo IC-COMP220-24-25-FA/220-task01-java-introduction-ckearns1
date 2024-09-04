@@ -26,6 +26,7 @@ public class Circle {
      * @post doubles the size of this circle
      */
     public void doubleSize(){
+        // I have no idea how to double a circles area. I will come back to this
         throw new RuntimeException("Not implemented yet");
     }
 
@@ -33,6 +34,9 @@ public class Circle {
      * @return the longest straight line that can be drawn within this circle
      */
     public double longestLineWithin(){
-        throw new RuntimeException("Not implemented yet");
+        double radius = this.radius;
+        double diamater = radius * 2;
+        return diamater;
+       // throw new RuntimeException("Not implemented yet");
     }
 }
