@@ -32,7 +32,8 @@ public class CircleTest {
     @Test
     public void doubleSizeTest(){
         Circle myCircle = new Circle(1);
-        assertEquals(3.1415, myCircle.calcArea(), 0.0001);
+        myCircle.doubleSize();
+        assertEquals(12.56637, myCircle.calcArea(), 0.0001);
         //come back to this 
     }
 

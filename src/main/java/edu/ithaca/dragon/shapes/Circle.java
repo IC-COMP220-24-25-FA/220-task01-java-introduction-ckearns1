@@ -26,8 +26,9 @@ public class Circle {
      * @post doubles the size of this circle
      */
     public void doubleSize(){
-        // I have no idea how to double a circles area. I will come back to this
-        throw new RuntimeException("Not implemented yet");
+        // doubles radius
+        this.radius = this.radius * 2;
+        //throw new RuntimeException("Not implemented yet");
     }
 
     /**
