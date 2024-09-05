@@ -31,5 +31,9 @@ public class Rectangle {
         return longestLine;
         //throw new RuntimeException("Not implemented yet");
     }
+
+    public String toString(){
+        return "Rectangle area: "+calcArea()+"\t Lingest line in rectangle:"+longestLineWithin();
+    }
     
 }
