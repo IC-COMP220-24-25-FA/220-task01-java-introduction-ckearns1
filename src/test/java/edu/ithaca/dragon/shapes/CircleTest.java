@@ -31,14 +31,16 @@ public class CircleTest {
 
     @Test
     public void doubleSizeTest(){
+        //doubles radius of circle
         Circle myCircle = new Circle(1);
         myCircle.doubleSize();
         assertEquals(12.56637, myCircle.calcArea(), 0.0001);
-        //come back to this 
+
     }
 
     @Test
     public void longestLineWithinTest(){
+        //Finds longest lone in the circle. 
         Circle myCircle = new Circle(1);
         assertEquals(2, myCircle.longestLineWithin(), 0.0001);
 
