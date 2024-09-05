@@ -24,7 +24,7 @@ public class TriangleTest {
     @Test
     public void doubleSizeTest(){
         Triangle myTriangle = new Triangle(3, 4,5);
-        assertEquals(6, myTriangle.doubleSize(), 0.0001);
+        assertEquals(12, myTriangle.doubleSize(), 0.0001);
     }
 
     @Test

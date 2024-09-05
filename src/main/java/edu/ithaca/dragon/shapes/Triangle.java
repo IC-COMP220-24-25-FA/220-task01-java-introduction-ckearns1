@@ -15,16 +15,16 @@ public class Triangle {
     public double calcArea(){
         double s = (sideA + sideB + sideC) / 2;
         double area = Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
-        //double height = (2 * area) / sideA;
         return area;
        // throw new RuntimeException("Not implemented yet");
     }
 
-    public double doubleSize(){
-
+    public double doubleSize() {
+        //doubles the triangles area 
         double doubleBase = this.sideA * 2;
-        double height = 
-        double doubleArea = this.sideA;
+        double originalArea = calcArea();
+        double height = (2 * originalArea) / this.sideA;
+        double doubleArea = (0.5) * doubleBase * height;
         return doubleArea;
         //throw new RuntimeException("Not implemented yet");
     }
