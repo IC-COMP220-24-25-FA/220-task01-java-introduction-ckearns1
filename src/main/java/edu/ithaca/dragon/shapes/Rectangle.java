@@ -18,7 +18,8 @@ public class Rectangle {
     }
 
     public double doubleSize(){
-        double doubledArea = this.length * this.width * 2; // is this alloud? Im not sure if im supposed to use the "this.length" here
+        this.length = this.length*2; //this does double the area but it changes the length in the object. not sure weather to return what the doubled area would be or actually double the area within the object
+        double doubledArea = this.length * this.width; // is this alloud? Im not sure if im supposed to use the "this.length" here
         return doubledArea;
         //throw new RuntimeException("Not implemented yet");
     }
