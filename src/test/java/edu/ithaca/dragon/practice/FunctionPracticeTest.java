@@ -6,6 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 //import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 public class FunctionPracticeTest {
@@ -15,7 +19,7 @@ public class FunctionPracticeTest {
         assertEquals(5, FunctionPractice.largestOfThree(4, 5, 2));
         assertEquals(5, FunctionPractice.largestOfThree(5, 4, 2));
         assertEquals(5, FunctionPractice.largestOfThree(4, 2, 5));
-        assertEquals(5, FunctionPractice.largestOfThree(5, 5, 5));
+        assertEquals(5, FunctionPractice.largestOfThree(5, 5, 5)); //these test switch the numbers around to make sure the result is correct reguardless of where the biggest number is 
 
         assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(-1, -1, -1));
         assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(5, -1, 3));
@@ -23,8 +27,29 @@ public class FunctionPracticeTest {
     }
 
     @Test
-    public void calcSalePriceTest(){
-        fail("Not implemented yet");
+    public void calcSalePriceTest(){ 
+        assertEquals(11, FunctionPractice.calcSalePrice(20, 50, 10));
+       //fail("Not implemented yet");
     }
+
+    @Test
+    public void isGoodDogTest(){
+        assertEquals(true, FunctionPractice.isGoodDog(1, 1, true));
+        assertEquals(false, FunctionPractice.isGoodDog(1, 0, true));
+
+    }
+
+    @Test
+    public void findFirstLargest(){ 
+        List<Integer> numbers2 = Arrays.asList(5,6,2,1);
+        ArrayList<Integer> aList = new ArrayList<>();
+        aList.add(1);
+        aList.add(7);
+        aList.add(4);
+        aList.add(6);
+        assertEquals(6, FunctionPractice.findFirstLargest(numbers2));
+        
+    }
+    
     
 }
