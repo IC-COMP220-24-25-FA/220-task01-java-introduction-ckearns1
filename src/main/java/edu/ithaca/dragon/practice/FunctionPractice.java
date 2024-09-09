@@ -58,7 +58,6 @@ public class FunctionPractice {
         int largestValue = numbers.get(0);
 
         for (int i = 1; i < numbers.size();i++) {
-            
             if (numbers.get(i) > largestValue) {
                 largestValue = numbers.get(i); // Update largest value
                 largestIndex = i; // Update largest index
@@ -74,16 +73,16 @@ public class FunctionPractice {
      * If the largest number occurs more than once, return the index of the last occurence.
      */
     public static int findLastLargest(List<Integer> numbers){
-        int smallestIndex = 0;
-        int smallestValue = 0;
+        int largestIndex = 0;
+        int largestValue = 0;
 
-        for (int i = 1; i < numbers.size();) {
-            if (numbers.get(i) < smallestValue) {
-                smallestValue = numbers.get(i); // Update largest value
-                smallestIndex = i; // Update largest index
+        for (int i = 1; i < numbers.size();i++) {
+            if (numbers.get(i) >= largestValue) {
+                largestValue = numbers.get(i); // Update largest value
+                largestIndex = i; // Update largest index
                 }
             }
-        return smallestIndex;
+        return largestIndex;
         }
         //throw new RuntimeException("Not Implemented");
     
