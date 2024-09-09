@@ -41,13 +41,8 @@ public class FunctionPracticeTest {
 
     @Test
     public void findFirstLargest(){ 
-        List<Integer> numbers2 = Arrays.asList(5,6,2,1);
-        ArrayList<Integer> aList = new ArrayList<>();
-        aList.add(1);
-        aList.add(7);
-        aList.add(4);
-        aList.add(6);
-        assertEquals(6, FunctionPractice.findFirstLargest(numbers2));
+        List<Integer> numbers2 = Arrays.asList(0,1,2,3);
+        assertEquals(3, FunctionPractice.findFirstLargest(numbers2));
         
     }
     
