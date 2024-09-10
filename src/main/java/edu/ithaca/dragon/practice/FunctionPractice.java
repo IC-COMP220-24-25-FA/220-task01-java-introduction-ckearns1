@@ -73,6 +73,9 @@ public class FunctionPractice {
      * If the largest number occurs more than once, return the index of the last occurence.
      */
     public static int findLastLargest(List<Integer> numbers){
+        if (numbers.isEmpty()) {
+            return -1; // Handle empty list case
+        }
         int largestIndex = 0;
         int largestValue = 0;
 

@@ -34,7 +34,7 @@ public class Rectangle {
     }
 
     public String toString(){
-        return "Rectangle area: "+calcArea()+"\t Lingest line in rectangle:"+longestLineWithin();
+        return "Shape: Rectangle \n Area: "+calcArea()+"\n Lingest line in rectangle:"+longestLineWithin()+"\n Length: "+this.length+"\n Width: "+this.width;
     }
     
 }

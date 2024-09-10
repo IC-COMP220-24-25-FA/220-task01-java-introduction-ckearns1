@@ -34,20 +34,47 @@ public class FunctionPracticeTest {
 
     @Test
     public void isGoodDogTest(){
+        //Tests to get a true value
         assertEquals(true, FunctionPractice.isGoodDog(1, 1, true));
+        //Tests to get a false value
         assertEquals(false, FunctionPractice.isGoodDog(1, 0, true));
 
     }
 
     @Test
     public void findFirstLargest(){ 
-        List<Integer> numbers2 = Arrays.asList(0,1,2,3,3,2);
-        assertEquals(3, FunctionPractice.findFirstLargest(numbers2));
-        
+        //Tests a list witth two largest numbers next to eachother 
+        List<Integer> numbers1 = Arrays.asList(0,1,2,3,3,2);
+        assertEquals(3, FunctionPractice.findFirstLargest(numbers1));
+        //Tests two of the same largest number not next to eachother 
+        List<Integer> numbers2 = Arrays.asList(3,1,2,0,3,2);
+        assertEquals(0, FunctionPractice.findFirstLargest(numbers2));
+        //Tests all of the same number 
+        List<Integer> numbers3 = Arrays.asList(4,4,4,4,4,4);
+        assertEquals(0, FunctionPractice.findFirstLargest(numbers3));
+        //Tests empty list 
+        List<Integer> numbers4 = Arrays.asList();
+        assertEquals(-1, FunctionPractice.findFirstLargest(numbers4));
+        //Tests negative numbers
+        List<Integer> numbers5 = Arrays.asList(-5,2,0,8,-1);
+        assertEquals(3, FunctionPractice.findFirstLargest(numbers5));
     }
     @Test
     public void findLastLargest(){ 
-        List<Integer> numbers2 = Arrays.asList(0,1,2,3,3,2);
+        //Tests a list witth two largest numbers next to eachother 
+        List<Integer> numbers1 = Arrays.asList(0,1,2,3,3,2);
+        assertEquals(4, FunctionPractice.findLastLargest(numbers1));
+        //Tests two of the same largest number not next to eachother 
+        List<Integer> numbers2 = Arrays.asList(3,1,2,0,3,2);
         assertEquals(4, FunctionPractice.findLastLargest(numbers2));
+        //Tests all of the same number 
+        List<Integer> numbers3 = Arrays.asList(4,4,4,4,4,4);
+        assertEquals(5, FunctionPractice.findLastLargest(numbers3));
+        //Tests empty list 
+        List<Integer> numbers4 = Arrays.asList();
+        assertEquals(-1, FunctionPractice.findLastLargest(numbers4));
+        //Tests negative numbers
+        List<Integer> numbers5 = Arrays.asList(-5,-3,-10,-2,1);
+        assertEquals(4, FunctionPractice.findLastLargest(numbers5));
     }
 }

@@ -33,5 +33,7 @@ public class Triangle {
         return Math.max(sideA, Math.max(sideB, sideC));
         //throw new RuntimeException("Not implemented yet");
     }
-
+    public String toString(){
+        return "Shape: Triangle \n Area: "+calcArea()+"\n Lingest line: "+longestLineWithin()+"\n Side A: "+this.sideA+"\n Side B: "+this.sideB+"Side C: "+this.sideC;
+    }
 }

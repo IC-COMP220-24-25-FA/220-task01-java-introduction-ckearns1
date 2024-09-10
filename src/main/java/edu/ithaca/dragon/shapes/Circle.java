@@ -40,4 +40,8 @@ public class Circle {
         return diamater;
        // throw new RuntimeException("Not implemented yet");
     }
+
+    public String toString(){
+        return "Shape: Circle \n Area: "+calcArea()+"\n Radius: "+this.radius;
+    }
 }
