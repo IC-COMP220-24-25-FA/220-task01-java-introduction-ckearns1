@@ -34,6 +34,6 @@ public class Triangle {
         //throw new RuntimeException("Not implemented yet");
     }
     public String toString(){
-        return "Shape: Triangle \n Area: "+calcArea()+"\n Lingest line: "+longestLineWithin()+"\n Side A: "+this.sideA+"\n Side B: "+this.sideB+"Side C: "+this.sideC;
+        return "Shape: Triangle \n Area: "+calcArea()+"\n Lingest line: "+longestLineWithin()+"\n Side A: "+this.sideA+"\n Side B: "+this.sideB+"Side C: "+this.sideC   ;
     }
 }
