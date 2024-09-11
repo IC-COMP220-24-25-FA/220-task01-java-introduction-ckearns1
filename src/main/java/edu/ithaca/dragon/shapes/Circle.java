@@ -25,9 +25,12 @@ public class Circle implements Shape{
     /**
      * @post doubles the size of this circle
      */
-    public void doubleSize(){
+    public double doubleSize(){
         // doubles radius
+
         this.radius = this.radius * 2;
+        double doubledArea = Math.PI * this.radius * this.radius;
+        return doubledArea;
         //throw new RuntimeException("Not implemented yet");
     }
 

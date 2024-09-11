@@ -8,4 +8,6 @@ public interface Shape   {
 
     double longestLineWithin();
 
+    String toString();
+
 }
