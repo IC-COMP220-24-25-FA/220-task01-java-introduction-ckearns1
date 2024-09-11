@@ -28,8 +28,17 @@ public class FunctionPracticeTest {
 
     @Test
     public void calcSalePriceTest(){ 
+        //Tests whole numbers 
         assertEquals(11, FunctionPractice.calcSalePrice(20, 50, 10));
-       //fail("Not implemented yet");
+        //Tests decimals
+        assertEquals(10.945, FunctionPractice.calcSalePrice(20, 50.25, 10));
+        //Tests 0 in discountPercent
+        assertEquals(22, FunctionPractice.calcSalePrice(20, 0, 10));
+        //Tests 0 in salesTax
+        assertEquals(10, FunctionPractice.calcSalePrice(20, 50, 0));
+        //Tests negative number inputs
+        assertThrows(IllegalArgumentException.class, () -> FunctionPractice.calcSalePrice(-20, 50, 10));
+       
     }
 
     @Test
