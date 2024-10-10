@@ -30,6 +30,27 @@ public class CircleTest {
     }
 
     @Test
+    public void doubleSizeTest(){
+        //doubles radius of circle
+        Circle myCircle = new Circle(1);
+        myCircle.doubleSize();
+        assertEquals(12.56637, myCircle.calcArea(), 0.0001);
+
+    }
+
+    @Test
+    public void longestLineWithinTest(){
+        //Finds longest lone in the circle. 
+        Circle myCircle = new Circle(1);
+        assertEquals(2, myCircle.longestLineWithin(), 0.0001);
+
+        myCircle = new Circle(3);
+        assertEquals(6, myCircle.longestLineWithin(), 0.0001);
+
+        myCircle = new Circle(2.25);
+        assertEquals(4.5, myCircle.longestLineWithin(), 0.0001);
+    }
+    @Test
     public void TestConstructorError(){
         assertThrows(IllegalArgumentException.class, () -> new Circle(0));
     }
@@ -37,3 +58,5 @@ public class CircleTest {
 
     
 }
+
+
